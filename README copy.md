@@ -471,3 +471,13 @@ This course is for non-coders or juniors who want to be a professional web devel
     4.  git remote add academy ssh://bitnami@18.133.37.82/home/bitnami/apps/mermaidsmart/repo/
     5.  git add . && git commit -m "m" && git push academy
     6.  open https://mermaidsmart.webacademy.pro
+
+COMMANDS RUN FOR DEPLOYING TO HEROKU
+git remote add origin https://github.com/gauranghaldankar/mermaids-mart.git
+git push --set-upstream origin master
+
+heroku login
+heroku apps:create mermaids-mart-app
+heroku config:set MONGODB_URL="mongodb+srv://mermaidsmart:mermaidsmart@cluster0.cnegh.mongodb.net/mermaidsmart?retryWrites=true&w=majority"
+heroku config:set SKIP_PREFLIGHT_CHECK=true
+git push heroku

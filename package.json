@@ -39,14 +39,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gaurang/mermaidsmart.git"
+    "url": "git+https://github.com/gauranghaldankar/mermaids-mart.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gaurang/mermaidsmart/issues"
+    "url": "https://github.com/gauranghaldankar/mermaids-mart/issues"
   },
-  "homepage": "https://github.com/gaurang/mermaidsmart#readme",
+  "homepage": "https://github.com/gauranghaldankar/mermaids-mart#readme",
   "engines": {
     "node": "12.4.0",
     "npm": "6.9.0"
