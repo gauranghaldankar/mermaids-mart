@@ -126,7 +126,8 @@ function OrderScreen(props) {
                           </Link>
                         </div>
                         <div md={4} className="text-right">
-                          {item.qty} x ${item.price} = ${item.qty * item.price}
+                          Rs. {item.price} x {item.qty} = Rs.{' '}
+                          {item.qty * item.price}
                         </div>
                       </div>
                     </li>
@@ -145,19 +146,19 @@ function OrderScreen(props) {
               <li>
                 <div className="row">
                   <div>Items</div>
-                  <div>${order.itemsPrice}</div>
+                  <div>Rs. {order.itemsPrice}</div>
                 </div>
               </li>
               <li>
                 <div className="row">
                   <div>Shipping</div>
-                  <div>${order.shippingPrice}</div>
+                  <div>Rs. {order.shippingPrice}</div>
                 </div>
               </li>
               <li>
                 <div className="row">
                   <div>Tax</div>
-                  <div>${order.taxPrice}</div>
+                  <div>Rs. {order.taxPrice}</div>
                 </div>
               </li>
               <li>
@@ -166,7 +167,7 @@ function OrderScreen(props) {
                     <strong>Order Total</strong>
                   </div>
                   <div>
-                    <strong>${order.totalPrice}</strong>
+                    <strong>Rs. {order.totalPrice}</strong>
                   </div>
                 </div>
               </li>
